@@ -1,0 +1,118 @@
+{
+  "name": "Nikita Nikolaev",
+  "title": "Senior Backend Software Engineer",
+  "location": "Petah Tikva, Israel",
+  "email": "Nikolaevnik13@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/nikita-nikolaev-37690499/",
+  "github": "https://github.com/nikolaev13nik",
+  "pdf": "Nikita_Nikolaev_CV.pdf",
+  "highlights": [
+    { "value": "8+", "label": "years backend" },
+    { "value": "Java", "label": "Spring Boot" },
+    { "value": "Kafka", "label": "event-driven" }
+  ],
+  "summary": "Java Software Developer with 8+ years of experience designing, building, and delivering distributed, high-throughput backend systems, plus 1 year of web frontend development. Specialized in Spring Boot microservices, REST APIs, and event-driven architectures (Kafka). Experienced in leading end-to-end feature design and implementation, and in contributing to architecture decisions across the full delivery lifecycle — design, development, and testing.",
+  "skills": [
+    { "group": "Languages", "items": ["Java", "JavaScript", "Python"] },
+    { "group": "Frameworks & Backend", "items": ["Spring Framework", "Spring Boot", "Spring MVC", "Spring Data JPA", "Spring Security", "Hibernate ORM", "JPQL", "Lombok", "Jackson", "JMX", "Maven (multi-module)", "Microservices", "Event-Driven Architecture", "Distributed Systems"] },
+    { "group": "APIs & Messaging", "items": ["REST", "OpenFeign", "OpenAPI/Swagger", "Apache Kafka", "JWT", "API Gateway (Zuul)", "Spring Mail"] },
+    { "group": "Databases", "items": ["PostgreSQL", "MySQL", "MongoDB", "Elasticsearch"] },
+    { "group": "DevOps & Cloud", "items": ["Docker", "Kubernetes", "OpenShift", "Helm", "Argo CD (GitOps)", "Google Cloud (GKE)", "CI/CD", "Heroku", "MongoDB Atlas", "CloudKarafka"] },
+    { "group": "Testing", "items": ["JUnit", "TestNG", "Mockito", "WireMock"] },
+    { "group": "Frontend", "items": ["React", "Redux", "HTML5", "CSS", "jQuery", "Bootstrap"] },
+    { "group": "Version Control", "items": ["Git", "GitHub", "Bitbucket"] },
+    { "group": "AI-Assisted Development", "items": ["Cursor", "MCP integrations", "Custom agent skills & rules", "Claude API"] },
+    { "group": "Methodologies & Tools", "items": ["SCRUM", "Agile", "Jira"] }
+  ],
+  "experience": [
+    {
+      "role": "Java Software Developer",
+      "company": "Amdocs",
+      "location": "Israel",
+      "period": "2021 – Present",
+      "about": "Large-scale telecom subscriber-provisioning and charging platform, built as a distributed system of Spring Boot microservices. The platform is the gateway between the operator's business systems and the charging engine, translating business requests into the data structures required by the charging platform.",
+      "points": [
+        "Led the design and end-to-end implementation of new features across multiple Spring Boot microservices, owning them from technical design through testing and production rollout.",
+        "Contributed to architecture and design decisions for the distributed platform — service boundaries, REST/OpenFeign API contracts (OpenAPI/Swagger), and event-driven messaging.",
+        "Designed and implemented Kafka-based event flows for asynchronous, decoupled communication between microservices, balancing business requirements with reliability and performance.",
+        "Wrote comprehensive automated tests with TestNG, JUnit, Mockito, and WireMock, reducing regressions and stabilizing releases.",
+        "Investigated, troubleshot, and solved production issues, reducing downtime and customer impact.",
+        "AI-assisted development: built custom Cursor agent skills, rules, and MCP integrations to accelerate development, code review, debugging, and log/issue investigation."
+      ],
+      "tech": ["Java", "Spring Boot", "Spring MVC", "Spring Data JPA", "Hibernate ORM", "PostgreSQL", "Maven (multi-module)", "OpenFeign", "OpenAPI/Swagger", "Apache Kafka", "Hystrix", "JWT", "Lombok", "Jackson", "JUnit", "TestNG", "Mockito", "WireMock", "Docker", "Kubernetes", "OpenShift", "Git", "Bitbucket", "Cursor", "MCP integrations", "Custom agent skills & rules", "Microservices", "Event-Driven Architecture", "Distributed Systems", "REST"]
+    },
+    {
+      "role": "Full-Stack Java Developer",
+      "company": "Elpisor LTD",
+      "location": "Rehovot, Israel",
+      "period": "2018 – 2021",
+      "about": "Social network for pet owners — a platform for communication between registered users (posts, messages, images) and lost-and-found pet announcements, built on a microservices architecture.",
+      "points": [
+        "Built the Java server side of a microservices-based social platform enabling user communication, media posts, and lost-and-found pet announcements.",
+        "Implemented secure authentication and authorization with JWT and request routing via Netflix Zuul API Gateway.",
+        "Developed an email-notification flow that alerted users to matching posts with approve/deny actions.",
+        "Integrated asynchronous messaging with CloudKarafka and deployed on Heroku with MongoDB Atlas and Bonsai Elasticsearch."
+      ],
+      "tech": ["Java", "Spring Framework", "JWT", "API Gateway (Zuul)", "Spring Mail", "MongoDB", "MongoDB Atlas", "Elasticsearch", "CloudKarafka", "Apache Kafka", "Heroku", "Microservices", "REST", "Git"]
+    },
+    {
+      "role": "Full-Stack Java Developer",
+      "company": "Inetex LTD",
+      "location": "Rehovot, Israel",
+      "period": "2017 – 2018",
+      "about": "E-commerce marketplace — an online shop with a wide product assortment.",
+      "points": [
+        "Developed server-side services and modules, including accounting and logging.",
+        "Contributed to frontend development and provided ongoing website support and maintenance."
+      ],
+      "tech": ["Java", "Spring Boot", "JavaScript", "HTML5", "CSS", "jQuery", "Bootstrap", "React", "Git"]
+    },
+    {
+      "role": "System Engineer",
+      "company": "Magalcom (Telrad Group)",
+      "location": "Israel",
+      "period": "2011 – 2015",
+      "about": "",
+      "points": [
+        "Planned digital communication schemes and supervised the build-out of installation projects.",
+        "Installed and configured video surveillance systems."
+      ],
+      "tech": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "Attendance Platform",
+      "kind": "Personal project",
+      "tagline": "Employee time-tracking system — microservices on Kubernetes in Google Cloud",
+      "about": "A self-initiated project I build in my own time to go deeper into cloud-native and DevOps practice: organizations track employee clock-in/out, and the system aggregates monthly hours and overtime for salary processing. Built and operated from code to cloud.",
+      "points": [
+        "Spring Boot microservices (accounting/auth with JWT, time tracking, AI assistant) with a database-per-service PostgreSQL design.",
+        "Kafka event flows with OpenAPI-generated message contracts; nightly schedulers detect broken clock records and dispatch batch events.",
+        "AI assistant service built on the Claude API.",
+        "React SPA served by nginx behind a Kubernetes ingress.",
+        "Helm chart per service; deployed to Google Kubernetes Engine, with Docker Compose and k3s for local development.",
+        "GitOps with Argo CD: each service's Helm chart on main is auto-synced to the Kubernetes cluster, with pruning and self-healing; CI on GitHub Actions."
+      ],
+      "tech": ["Java", "Spring Boot", "Spring Data JPA", "PostgreSQL", "Apache Kafka", "JWT", "OpenAPI/Swagger", "React", "Docker", "Kubernetes", "Helm", "Argo CD (GitOps)", "Google Cloud (GKE)", "Claude API", "CI/CD", "Git", "GitHub", "Microservices", "Event-Driven Architecture", "REST"],
+      "demo": { "label": "Live demo", "url": "https://nik-attendance-app.duckdns.org/" },
+      "links": [
+        { "label": "Platform & Helm", "url": "https://github.com/nikolaev13nik/attendance-project-common" },
+        { "label": "Accounting", "url": "https://github.com/nikolaev13nik/Attendance-Accounting" },
+        { "label": "Time Tracking", "url": "https://github.com/nikolaev13nik/Attendance-TimeTracking" },
+        { "label": "AI Assistant", "url": "https://github.com/nikolaev13nik/Attendance-AI-Assistance" },
+        { "label": "React GUI", "url": "https://github.com/nikolaev13nik/Attendance-Gui-App" }
+      ]
+    }
+  ],
+  "education": [
+    { "title": "Advanced Programming — Java Backend Development", "place": "Tel-Ran Educational Center", "period": "2015 – 2016" },
+    { "title": "BSc in Computer Science", "place": "Orel State University, Russia", "period": "2002 – 2007" }
+  ],
+  "languages": [
+    { "name": "Russian", "level": "Native" },
+    { "name": "Hebrew", "level": "Fluent" },
+    { "name": "English", "level": "Professional working proficiency" }
+  ],
+  "military": "Israel Defense Forces"
+}
