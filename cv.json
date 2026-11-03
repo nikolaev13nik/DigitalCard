@@ -87,14 +87,16 @@
       "tagline": "Employee time-tracking system — microservices on Kubernetes in Google Cloud",
       "about": "A self-initiated project I build in my own time to go deeper into cloud-native and DevOps practice: organizations track employee clock-in/out, and the system aggregates monthly hours and overtime for salary processing. Built and operated from code to cloud.",
       "points": [
-        "Spring Boot microservices (accounting/auth with JWT, time tracking, AI assistant) with a database-per-service PostgreSQL design.",
-        "Kafka event flows with OpenAPI-generated message contracts; nightly schedulers detect broken clock records and dispatch batch events.",
-        "AI assistant service built on the Claude API.",
+        "Spring Boot microservices (accounting/auth issuing JWTs, time tracking, AI assistant) with a schema per service in PostgreSQL, versioned with Flyway.",
+        "Multi-tenant security: the tenant in every URL is checked against the JWT, with a role hierarchy and a platform-administrator role, packaged as a shared Spring Boot auto-configuration library.",
+        "Kafka event flows with OpenAPI-generated message contracts, messages keyed per user, dead-letter topics, and malformed messages routed straight to the DLQ without retries.",
+        "AI assistant on the Claude API that turns an employee's last six months into a trend analysis emailed to the manager, with a free stub for tests, temporary failures retried and permanent ones sent to the DLQ, and no second paid call when only the email fails.",
+        "One trace id follows each request from the HTTP call through Kafka to the email (Micrometer Tracing), with structured JSON logs on GKE.",
         "React SPA served by nginx behind a Kubernetes ingress.",
-        "Helm chart per service; deployed to Google Kubernetes Engine, with Docker Compose and k3s for local development.",
-        "GitOps with Argo CD: each service's Helm chart on main is auto-synced to the Kubernetes cluster, with pruning and self-healing; CI on GitHub Actions."
+        "Helm chart per service, deployed to Google Kubernetes Engine with TLS from cert-manager and Let's Encrypt; Docker Compose and k3s for local development.",
+        "GitOps with Argo CD on the local k3s cluster (auto-sync, pruning, self-healing); CI on GitHub Actions with an 85% test-coverage gate and images published to GitHub Container Registry."
       ],
-      "tech": ["Java", "Spring Boot", "Spring Data JPA", "PostgreSQL", "Apache Kafka", "JWT", "OpenAPI/Swagger", "React", "Docker", "Kubernetes", "Helm", "Argo CD (GitOps)", "Google Cloud (GKE)", "Claude API", "CI/CD", "Git", "GitHub", "Microservices", "Event-Driven Architecture", "REST"],
+      "tech": ["Java", "Spring Boot", "Spring Security", "Spring Data JPA", "Flyway", "PostgreSQL", "Micrometer Tracing", "Apache Kafka", "JWT", "OpenAPI/Swagger", "React", "Docker", "Kubernetes", "Helm", "Argo CD (GitOps)", "Google Cloud (GKE)", "Claude API", "CI/CD", "Git", "GitHub", "Microservices", "Event-Driven Architecture", "REST"],
       "demo": { "label": "Live demo", "url": "https://nik-attendance-app.duckdns.org/" },
       "links": [
         { "label": "Platform & Helm", "url": "https://github.com/nikolaev13nik/attendance-project-common" },
