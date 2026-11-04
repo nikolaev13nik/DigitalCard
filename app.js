@@ -264,7 +264,11 @@ async function init() {
     setupFilter();
     setupScrollEffects();
   } catch (e) {
-    $("summary").textContent = "Could not load cv.json. If you opened index.html directly from disk, run a local server instead (python3 -m http.server).";
+    $("summary").replaceChildren(
+      "Could not load this page. You can still ",
+      el("a", { href: "Nikita_Nikolaev_CV.pdf", text: "download my CV as a PDF" }),
+      "."
+    );
   }
 }
 

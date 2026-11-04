@@ -6,15 +6,15 @@
   "linkedin": "https://www.linkedin.com/in/nikita-nikolaev-37690499/",
   "github": "https://github.com/nikolaev13nik",
   "pdf": "Nikita_Nikolaev_CV.pdf",
-  "summary": "Java Software Developer with 8+ years of experience designing, building, and delivering distributed, high-throughput backend systems, plus 1 year of web frontend development. Specialized in Spring Boot microservices, REST APIs, and event-driven architectures (Kafka). Experienced in leading end-to-end feature design and implementation, and in contributing to architecture decisions across the full delivery lifecycle — design, development, and testing.",
+  "summary": "Java Software Developer with 8+ years of experience designing, building, and delivering distributed, high-throughput backend systems. Specialized in Spring Boot microservices, REST APIs, and event-driven architectures (Kafka). Experienced in leading end-to-end feature design and implementation, and in contributing to architecture decisions across the full delivery lifecycle — design, development, and testing. I also build and run my own microservices platform on Kubernetes in Google Cloud.",
   "skills": [
     { "group": "Languages", "items": ["Java", "JavaScript", "Python"] },
-    { "group": "Frameworks & Backend", "items": ["Spring Framework", "Spring Boot", "Spring MVC", "Spring Data JPA", "Spring Security", "Hibernate ORM", "JPQL", "Lombok", "Jackson", "JMX", "Maven (multi-module)", "Microservices", "Event-Driven Architecture", "Distributed Systems"] },
-    { "group": "APIs & Messaging", "items": ["REST", "OpenFeign", "OpenAPI/Swagger", "Apache Kafka", "JWT", "API Gateway (Zuul)", "Spring Mail"] },
-    { "group": "Databases", "items": ["PostgreSQL", "MySQL", "MongoDB", "Elasticsearch"] },
-    { "group": "DevOps & Cloud", "items": ["Docker", "Kubernetes", "OpenShift", "Helm", "Argo CD (GitOps)", "Google Cloud (GKE)", "CI/CD", "Heroku", "MongoDB Atlas", "CloudKarafka"] },
+    { "group": "Frameworks & Backend", "items": ["Spring Framework", "Spring Boot", "Spring MVC", "Spring Data JPA", "Spring Security", "Hibernate ORM", "JPQL", "Maven (multi-module)", "Microservices", "Event-Driven Architecture", "Distributed Systems"] },
+    { "group": "APIs & Messaging", "items": ["REST", "OpenFeign", "OpenAPI/Swagger", "Apache Kafka", "JWT", "API Gateway (Zuul)"] },
+    { "group": "Databases", "items": ["PostgreSQL", "MySQL", "MongoDB", "Elasticsearch", "Flyway"] },
+    { "group": "DevOps & Cloud", "items": ["Docker", "Kubernetes", "OpenShift", "Helm", "Argo CD (GitOps)", "Google Cloud (GKE)", "CI/CD", "Micrometer Tracing", "Heroku", "MongoDB Atlas"] },
     { "group": "Testing", "items": ["JUnit", "TestNG", "Mockito", "WireMock"] },
-    { "group": "Frontend", "items": ["React", "Redux", "HTML5", "CSS", "jQuery", "Bootstrap"] },
+    { "group": "Frontend", "items": ["React", "Redux", "HTML5", "CSS"] },
     { "group": "Version Control", "items": ["Git", "GitHub", "Bitbucket"] },
     { "group": "AI-Assisted Development", "items": ["Cursor", "MCP integrations", "Custom agent skills & rules", "Claude API"] },
     { "group": "Methodologies & Tools", "items": ["SCRUM", "Agile", "Jira"] }
@@ -34,7 +34,7 @@
         "Investigated, troubleshot, and solved production issues, reducing downtime and customer impact.",
         "AI-assisted development: built custom Cursor agent skills, rules, and MCP integrations to accelerate development, code review, debugging, and log/issue investigation."
       ],
-      "tech": ["Java", "Spring Boot", "Spring MVC", "Spring Data JPA", "Hibernate ORM", "PostgreSQL", "Maven (multi-module)", "OpenFeign", "OpenAPI/Swagger", "Apache Kafka", "Hystrix", "JWT", "Lombok", "Jackson", "JUnit", "TestNG", "Mockito", "WireMock", "Docker", "Kubernetes", "OpenShift", "Git", "Bitbucket", "Cursor", "MCP integrations", "Custom agent skills & rules", "Microservices", "Event-Driven Architecture", "Distributed Systems", "REST"]
+      "tech": ["Java", "Spring Boot", "Spring MVC", "Spring Data JPA", "Hibernate ORM", "PostgreSQL", "Maven (multi-module)", "OpenFeign", "OpenAPI/Swagger", "Apache Kafka", "Hystrix", "JWT", "Lombok", "Jackson", "JUnit", "TestNG", "Mockito", "WireMock", "Docker", "Kubernetes", "OpenShift", "Git", "Bitbucket", "Cursor", "MCP integrations", "Custom agent skills & rules", "Microservices", "Event-Driven Architecture", "Distributed Systems", "REST", "Python", "SCRUM", "Agile", "Jira"]
     },
     {
       "role": "Full-Stack Java Developer",
@@ -48,7 +48,7 @@
         "Developed an email-notification flow that alerted users to matching posts with approve/deny actions.",
         "Integrated asynchronous messaging with CloudKarafka and deployed on Heroku with MongoDB Atlas and Bonsai Elasticsearch."
       ],
-      "tech": ["Java", "Spring Framework", "JWT", "API Gateway (Zuul)", "Spring Mail", "MongoDB", "MongoDB Atlas", "Elasticsearch", "CloudKarafka", "Apache Kafka", "Heroku", "Microservices", "REST", "Git"]
+      "tech": ["Java", "Spring Framework", "JWT", "API Gateway (Zuul)", "Spring Mail", "MongoDB", "MongoDB Atlas", "Elasticsearch", "CloudKarafka", "Apache Kafka", "Heroku", "Microservices", "REST", "Git", "MySQL", "Redux", "SCRUM", "Agile", "Jira"]
     },
     {
       "role": "Full-Stack Java Developer",
@@ -60,7 +60,7 @@
         "Developed server-side services and modules, including accounting and logging.",
         "Contributed to frontend development and provided ongoing website support and maintenance."
       ],
-      "tech": ["Java", "Spring Boot", "JavaScript", "HTML5", "CSS", "jQuery", "Bootstrap", "React", "Git"]
+      "tech": ["Java", "Spring Boot", "JavaScript", "HTML5", "CSS", "jQuery", "Bootstrap", "React", "Git", "MySQL", "Redux", "SCRUM", "Agile", "Jira"]
     },
     {
       "role": "System Engineer",
@@ -80,7 +80,7 @@
       "name": "Attendance Platform",
       "kind": "Personal project",
       "tagline": "Employee time-tracking system — microservices on Kubernetes in Google Cloud",
-      "about": "A self-initiated project I build in my own time to go deeper into cloud-native and DevOps practice: organizations track employee clock-in/out, and the system aggregates monthly hours and overtime for salary processing. Built and operated from code to cloud.",
+      "about": "Created to go deeper into cloud-native and DevOps practice: organizations track employee clock-in/out, and the system aggregates monthly hours and overtime for salary processing. Built and operated from code to cloud.",
       "points": [
         "Spring Boot microservices (accounting/auth issuing JWTs, time tracking, AI assistant) with a schema per service in PostgreSQL, versioned with Flyway.",
         "Multi-tenant security: the tenant in every URL is checked against the JWT, with a role hierarchy and a platform-administrator role, packaged as a shared Spring Boot auto-configuration library.",
@@ -91,7 +91,7 @@
         "Helm chart per service, deployed to Google Kubernetes Engine with TLS from cert-manager and Let's Encrypt; Docker Compose and k3s for local development.",
         "GitOps with Argo CD on the local k3s cluster (auto-sync, pruning, self-healing); CI on GitHub Actions with an 85% test-coverage gate and images published to GitHub Container Registry."
       ],
-      "tech": ["Java", "Spring Boot", "Spring Security", "Spring Data JPA", "Flyway", "PostgreSQL", "Micrometer Tracing", "Apache Kafka", "JWT", "OpenAPI/Swagger", "React", "Docker", "Kubernetes", "Helm", "Argo CD (GitOps)", "Google Cloud (GKE)", "Claude API", "CI/CD", "Git", "GitHub", "Microservices", "Event-Driven Architecture", "REST"],
+      "tech": ["Java", "Spring Boot", "Spring Security", "Spring Data JPA", "Flyway", "PostgreSQL", "Micrometer Tracing", "Apache Kafka", "JWT", "OpenAPI/Swagger", "React", "Docker", "Kubernetes", "Helm", "Argo CD (GitOps)", "Google Cloud (GKE)", "Claude API", "CI/CD", "Git", "GitHub", "Microservices", "Event-Driven Architecture", "REST", "JPQL"],
       "demo": { "label": "Live demo", "url": "https://nik-attendance-app.duckdns.org/" },
       "links": [
         { "label": "Platform & Helm", "url": "https://github.com/nikolaev13nik/attendance-project-common" },
