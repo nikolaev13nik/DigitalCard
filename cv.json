@@ -6,11 +6,6 @@
   "linkedin": "https://www.linkedin.com/in/nikita-nikolaev-37690499/",
   "github": "https://github.com/nikolaev13nik",
   "pdf": "Nikita_Nikolaev_CV.pdf",
-  "highlights": [
-    { "value": "8+", "label": "years backend" },
-    { "value": "Java", "label": "Spring Boot" },
-    { "value": "Kafka", "label": "event-driven" }
-  ],
   "summary": "Java Software Developer with 8+ years of experience designing, building, and delivering distributed, high-throughput backend systems, plus 1 year of web frontend development. Specialized in Spring Boot microservices, REST APIs, and event-driven architectures (Kafka). Experienced in leading end-to-end feature design and implementation, and in contributing to architecture decisions across the full delivery lifecycle — design, development, and testing.",
   "skills": [
     { "group": "Languages", "items": ["Java", "JavaScript", "Python"] },

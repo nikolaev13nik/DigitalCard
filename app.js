@@ -73,9 +73,6 @@ function renderHero(cv) {
   $("title").textContent = cv.title;
   $("location").textContent = cv.location;
   $("summary").textContent = cv.summary;
-  $("highlights").append(...cv.highlights.map((h) =>
-    el("div", { class: "stat" }, [el("b", { text: h.value }), el("span", { text: h.label })])
-  ));
   $("actions").append(...contactButtons(cv, true));
   $("contact-actions").append(...contactButtons(cv, true));
   $("footer-name").textContent = cv.name;

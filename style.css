@@ -118,14 +118,6 @@ h2 { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; margin-bottom:
 .hero h1 { font-size: clamp(2.4rem, 8vw, 4rem); font-weight: 800; letter-spacing: -.03em; }
 .hero__title { font-size: clamp(1.15rem, 3.5vw, 1.5rem); color: #cbd5e1; margin: 8px 0 32px; }
 
-.stats { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; }
-.stat {
-  padding: 12px 18px; border-radius: 12px;
-  background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .14);
-}
-.stat b { display: block; font-size: 1.35rem; font-weight: 800; }
-.stat span { font-size: .85rem; color: #cbd5e1; }
-
 .actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
@@ -285,8 +277,7 @@ h2 { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; margin-bottom:
   }
   .topbar, .hint, .link-btn, .icon-btn, .filter-bar, .contact, .toast, .actions .btn--primary { display: none !important; }
   .hero { background: none; color: #000; padding: 0 0 16px; }
-  .hero__title, .eyebrow, .stat span { color: #333; }
-  .stat { border-color: #ccc; background: none; }
+  .hero__title, .eyebrow { color: #333; }
   .btn--ghost { color: #000; border-color: #ccc; background: none; }
   .section { padding: 16px 0; break-inside: avoid-page; }
   .job__body { grid-template-rows: 1fr !important; }
